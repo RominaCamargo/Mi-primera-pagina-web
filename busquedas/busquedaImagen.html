@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda de imágenes en Google</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/busquedaImagen.css">
+    <link rel="icon" type="image/png" href="../img/icono.png">
+</head>
+<body>
+    <nav class="arriba">
+        <h2 class="logo">Mi página</h2>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../autor/autor.html">Autor</a></li>
+            <li><a href="../autor/hobbies.html">Hobbies</a></li>
+            <li><a href="../autor/ingSistemas.html">Ing. Sistemas</a></li>
+            <li><a href="../autor/galeria.html">Galería</a></li>
+            <li><a href="../autor/estandaresWeb.html">Estándares Web</a></li>
+            <li><a href="../autor/contactame.html">Contáctame</a></li>
+            <li><a href="busqueda.html">Búsqueda simple</a></li>
+            <li><a href="busquedaImagen.html">Búsqueda de imágenes</a></li>
+            <li><a href="busquedaAvanzada.html">Búsqueda avanzada</a></li>
+        </ul>
+    </nav>
+
+    <nav class="Izquierdo">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../autor/autor.html">Autor</a></li>
+            <li><a href="../autor/hobbies.html">Hobbies</a></li>
+            <li><a href="../autor/ingSistemas.html">Ing. Sistemas</a></li>
+            <li><a href="../autor/galeria.html">Galería</a></li>
+            <li><a href="../autor/estandaresWeb.html">Estándares Web</a></li>
+            <li><a href="../autor/simple.html">Búsqueda simple</a></li>
+            <li><a href="../autor/busqueda.html">Búsqueda simple</a></li>
+            <li><a href="../autor/busquedaImagen.html">Búsqueda de imágenes</a></li>
+            <li><a href="../autor/busquedaAvanzada.html">Búsqueda avanzada</a></li>
+
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Búsqueda Imágenes en Google</h1>
+        <div class="img-container">
+            <img src="../img/snoopy.gif" alt="Descripción de la imagen">
+        </div>
+        <form action="/cgi-bin/buscador_imagenes.pl" method="GET">
+            <input type="text" id="query" name="query" placeholder="Buscar..." required>
+            <button type="submit">Buscar</button>
+        </form>
+    </main>
+</body>
+</html>

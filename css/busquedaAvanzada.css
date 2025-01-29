@@ -1,0 +1,218 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Fredoka', sans-serif;
+    background-color: #c8cdff;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh;
+
+}
+
+/* Barra superior fija */
+.arriba {
+    width: 100%;
+    background-color: #46589e;
+    padding: 15px 30px;
+    color: white;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.arriba .logo {
+    font-size: 28px;
+    margin: 0;
+    color: white;
+}
+
+.arriba ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.arriba ul li {
+    margin: 0 15px;
+}
+
+.arriba ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.arriba ul li a:hover {
+    background-color: #354d7a;
+    transform: scale(1.05);
+}
+
+/* Menú izquierdo */
+.Izquierdo {
+    width: 220px;
+    background-color: #46589e;
+    padding: 25px 15px;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    top: 70px; /* Ajuste para estar debajo de la barra superior */
+    left: 0;
+    z-index: 5;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.Izquierdo h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.Izquierdo ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Izquierdo ul li {
+    margin-bottom: 15px;
+}
+
+.Izquierdo ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.Izquierdo ul li a:hover {
+    background-color: #354d7a;
+}
+
+/* Contenedor principal */
+main {
+    margin-left: 240px; /* Espacio para el menú izquierdo */
+    padding: 100px 40px;
+    flex-grow: 1;
+    background-color: #eef1ff;
+    min-height: 100vh;
+}
+
+/* Encabezado del contenido */
+main h1 {
+    font-size: 28px;
+    color: #46589e;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Contenedor del formulario */
+.form-container {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-container h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Estilos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #46589e;
+    outline: none;
+    box-shadow: 0 0 5px rgba(70, 88, 158, 0.5);
+}
+
+/* Organización en columnas dentro del formulario */
+.inline-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inline-group label,
+.inline-group input {
+    width: 48%; /* Ajustar el tamaño para que quepan dos elementos en línea */
+}
+
+/* Botón de búsqueda */
+button[type="submit"] {
+    padding: 12px 20px;
+    background-color: #46589e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #c8cdff;
+    transform: scale(1.05);
+}
+
+/* Estilo de los encabezados de secciones en el formulario */
+h2 {
+    font-size: 16px;
+    color: #46589e;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Scroll personalizado */
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #eef1ff;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #46589e;
+    border-radius: 20px;
+    border: 2px solid #eef1ff;
+}

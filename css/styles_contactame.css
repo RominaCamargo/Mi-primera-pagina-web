@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: 'Fredoka', cursive;
+    background-color: #c8cdff;
+}
+
+.arriba {
+    width: 100%;
+    background-color: #46589e;
+    padding: 15px;
+    color: white;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    font-size: 25px;
+}
+
+.logo {
+    margin: 0;
+    color:white;
+    font-size: 25px;
+}
+
+.arriba ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.arriba ul li {
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.arriba ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.arriba ul li a:hover {
+    background-color: #19274c;
+}
+
+.content {
+    margin-left: 220px; 
+    padding: 100px 20px 20px 20px;
+    flex-grow: 1; 
+}
+
+header h1 {
+    text-align: center;
+    margin-top: 0;
+    color:#46589e;
+}
+
+h2 {
+    text-align: center;
+    color:#46589e;
+}
+
+.formulario {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group-radio {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.formulario button {
+    width: 100%;
+    padding: 20px;
+    background-color: #46589e;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formulario button:hover {
+    background-color: #19274c;
+}

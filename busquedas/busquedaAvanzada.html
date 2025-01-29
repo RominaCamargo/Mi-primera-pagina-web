@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda Avanzada en Google</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/busquedaAvanzada.css">
+    <link rel="icon" type="image/png" href="../img/icono.png">
+</head>
+
+<body>
+    <nav class="arriba">
+        <h2 class="logo">Mi página</h2>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../autor/autor.html">Autor</a></li>
+            <li><a href="../autor/hobbies.html">Hobbies</a></li>
+            <li><a href="../autor/ingSistemas.html">Ing. Sistemas</a></li>
+            <li><a href="../autor/galeria.html">Galería</a></li>
+            <li><a href="../autor/estandaresWeb.html">Estándares Web</a></li>
+            <li><a href="../autor/contactame.html">Contáctame</a></li>
+            <li><a href="busqueda.html">Búsqueda simple</a></li>
+            <li><a href="busquedaImagen.html">Búsqueda de imágenes</a></li>
+            <li><a href="busquedaAvanzada.html">Búsqueda avanzada</a></li>
+        </ul>
+    </nav>
+
+    <nav class="Izquierdo">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../autor/autor.html">Autor</a></li>
+            <li><a href="../autor/hobbies.html">Hobbies</a></li>
+            <li><a href="../autor/ingSistemas.html">Ing. Sistemas</a></li>
+            <li><a href="../autor/galeria.html">Galería</a></li>
+            <li><a href="../autor/estandaresWeb.html">Estándares Web</a></li>
+            <li><a href="../autor/simple.html">Búsqueda simple</a></li>
+            <li><a href="../autor/busqueda.html">Búsqueda simple</a></li>
+            <li><a href="../autor/busquedaImagen.html">Búsqueda de imágenes</a></li>
+            <li><a href="../autor/busquedaAvanzada.html">Búsqueda avanzada</a></li>
+
+        </ul>
+    </nav>
+
+
+    <main>
+        <h1>Búsqueda Avanzada</h1>
+        <div class="form-container">
+            <h2>Mostrar páginas que contengan...</h2>
+            <form action="/cgi-bin/buscador_avanzado.pl" method="GET">
+                <!-- Sección de palabras clave -->
+                <label for="todas-palabras">Todas estas palabras:</label>
+                <input type="text" id="todas-palabras" name="todas-palabras">
+
+                <label for="frase-exacta">Esta palabra o frase exacta:</label>
+                <input type="text" id="frase-exacta" name="frase-exacta">
+
+                <label for="cualquiera-palabras">Cualquiera de estas palabras:</label>
+                <input type="text" id="cualquiera-palabras" name="cualquiera-palabras">
+
+                <label for="ninguna-palabras">Ninguna de estas palabras:</label>
+                <input type="text" id="ninguna-palabras" name="ninguna-palabras">
+
+                <!-- Sección de números -->
+                <h2>Números del:</h2>
+                <div class="inline-group">
+                    <label for="numero-del">Números del:</label>
+                    <input type="number" id="numero-del" name="numero-del" min="0">
+                    <label for="numero-al">al:</label>
+                    <input type="number" id="numero-al" name="numero-al" min="0">
+                </div>
+
+                <!-- Sección de filtros adicionales -->
+                <h2>Luego restringe tus resultados por...</h2>
+                <label for="idioma">Idioma:</label>
+                <select id="idioma" name="idioma">
+                    <option value="">Cualquier idioma</option>
+                    <option value="es">Español</option>
+                    <option value="en">Inglés</option>
+                    <option value="fr">Francés</option>
+                    <option value="de">Alemán</option>
+                    <option value="it">Italiano</option>
+                    <option value="pt">Portugués</option>
+                    <option value="zh">Chino</option>
+                    <option value="ru">Ruso</option>
+                    <option value="ja">Japonés</option>
+                    <option value="ko">Coreano</option>
+                </select>
+
+                <label for="region">Región:</label>
+                <select id="region" name="region">
+                    <option value="">Cualquier región</option>
+                    <option value="es">España</option>
+                    <option value="mx">México</option>
+                    <option value="ar">Argentina</option>
+                    <option value="cl">Chile</option>
+                    <option value="us">Estados Unidos</option>
+                    <option value="uk">Reino Unido</option>
+                    <option value="fr">Francia</option>
+                    <option value="de">Alemania</option>
+                    <option value="it">Italia</option>
+                    <option value="br">Brasil</option>
+                </select>
+
+                <label for="actualizacion">Última actualización:</label>
+                <select id="actualizacion" name="actualizacion">
+                    <option value="">En cualquier momento</option>
+                    <option value="d">Últimas 24 horas</option>
+                    <option value="w">Última semana</option>
+                    <option value="m">Último mes</option>
+                    <option value="y">Último año</option>
+                </select>
+
+                <label for="sitio">Sitio o dominio:</label>
+                <input type="text" id="sitio" name="sitio">
+
+                <label for="terminos">Términos que aparecen:</label>
+                <select id="terminos" name="terminos">
+                    <option value="cualquier-parte">En cualquier parte de la página</option>
+                    <option value="titulo">En el título de la página</option>
+                    <option value="texto">En el texto de la página</option>
+                    <option value="url">En la URL de la página</option>
+                    <option value="enlaces">En los enlaces de la página</option>
+                </select>
+
+                <label for="tipo-archivo">Tipo de archivo:</label>
+                <select id="tipo-archivo" name="tipo-archivo">
+                    <option value="cualquier-formato">Cualquier formato</option>
+                    <option value="pdf">PDF</option>
+                    <option value="doc">Documentos (.doc)</option>
+                    <option value="ppt">Presentaciones (.ppt)</option>
+                    <option value="xls">Hojas de cálculo (.xls)</option>
+                    <option value="txt">Texto (.txt)</option>
+                    <option value="html">Páginas web (.html)</option>
+                </select>
+
+                <label for="derechos-uso">Derechos de uso:</label>
+                <select id="derechos-uso" name="derechos-uso">
+                    <option value="libre-licencia">Páginas cuyo uso no requiera de licencias</option>
+                    <option value="libre-modificacion">Libre para usar, compartir o modificar</option>
+                    <option value="libre-uso-comercial">Libre para uso comercial</option>
+                    <option value="uso-compartido">Uso compartido con atribución</option>
+                </select>
+
+                <button type="submit">Búsqueda Avanzada</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctame</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles_contactame.css">
+    <link rel="icon" type="image/png" href="../img/icono.png">
+</head>
+<body>
+    <nav class="arriba">
+        <h2 class="logo">Mi página</h2>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="autor.html">Autor</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="ingSistemas.html">Ing. Sistemas</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="estandaresWeb.html">Estándares Web</a></li>
+            <li><a href="contactame.html">Contáctame</a></li>
+            <li><a href="../busquedas/busqueda.html">Búsqueda simple</a></li>
+            <li><a href="../busquedas/busquedaImagen.html">Búsqueda de imágenes</a></li>
+            <li><a href="../busquedas/busquedaAvanzada.html">Búsqueda avanzada</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <header>
+            <h1 class="color5">Contactame</h1>
+        </header>
+
+        <section>
+            <h2>Formulario de Contacto</h2>
+            <form action="#" method="POST" class="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo electrónico" required>
+
+                <div class="form-group-radio">
+                    <label>
+                        <input type="radio" name="gender" value="Masculino"> Masculino
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="Femenino"> Femenino
+                    </label>
+                </div>
+
+                <label for="nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="nacimiento" name="nacimiento" required>
+
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" placeholder="Motivo del contacto" required>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

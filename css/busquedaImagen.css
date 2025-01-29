@@ -1,0 +1,153 @@
+/* Reseteo de márgenes y tipografía */
+body {
+    margin: 0;
+    font-family: 'Fredoka', sans-serif;
+    background-color: #c8cdff;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Barra superior fija */
+.arriba {
+    width: 100%;
+    background-color: #46589e;
+    padding: 15px;
+    color: white;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.arriba .logo {
+    font-size: 25px;
+    margin: 0;
+}
+
+.arriba ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.arriba ul li {
+    margin: 0 15px;
+}
+
+.arriba ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.arriba ul li a:hover {
+    background-color: #354d7a;
+}
+
+/* Menú izquierdo */
+.Izquierdo {
+    width: 200px;
+    background-color: #46589e;
+    padding: 20px;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    top: 70px; /* Ajustado debajo de la barra superior */
+    left: 0;
+    z-index: 5;
+}
+
+.Izquierdo h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.Izquierdo ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Izquierdo ul li {
+    margin: 15px 0;
+}
+
+.Izquierdo ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.Izquierdo ul li a:hover {
+    background-color: #354d7a;
+}
+
+/* Contenido principal */
+main {
+    margin-left: 220px; /* Separar del menú izquierdo */
+    padding: 100px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    color: #46589e;
+}
+
+
+.img-container img {
+    max-width: 300px;
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px #c8cdff(0, 0, 0, 0.2);
+}
+
+/* Estilos del formulario de búsqueda */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: column; /* Ajustado para la columna */
+}
+
+input[type="text"] {
+    padding: 15px 20px;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 400px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #46589e;
+    outline: none;
+}
+
+button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    background-color: #46589e;
+    color: white;
+    font-size: 16px;
+    margin-top: 15px; /* Separado del input */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #357ae8;
+}

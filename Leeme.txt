@@ -1,0 +1,37 @@
+==============================================
+INSTRUCCIONES PARA EJECUTAR MI PÁGINA WEB
+==============================================
+Requisitos:
+- Tener Docker instalado en su computadora ABRIR EL DOCKER DESKTOP Y VERIFICAR QUE ESTE CORRIENDO.
+
+Pasos para ejecutar el proyecto:
+
+1. Descomprima el archivo Camargo__Hilachoque_LABORATORIO_03.zip en su computadora.
+
+2. Abra su terminal o PowerShell y navegue a la carpeta descomprimida:
+   
+   cd "C:\ruta\hacia\la\carpeta\mi-primera-pagina-web"
+
+3. Construya la imagen de Docker con el siguiente comando:
+
+   docker build -t mi-pagina-apache .
+
+4. Una vez creada la imagen, ejecute el contenedor con:
+
+   docker run -d -p 8080:80 --name mi-pagina-apache mi-pagina-apache
+
+5. Abra su navegador y vaya a la dirección:
+
+   http://localhost:8080
+
+6. Ahora se podrá ver mi proyecto en ejecución. Puede navegar a las diferentes secciones (Autor, Hobbies, etc.) para revisar el contenido.
+
+Para detener el contenedor:
+
+   docker stop mi-pagina-apache
+
+Para eliminar el contenedor después de revisarlo:
+
+   docker rm mi-pagina-apache
+
+==============================================
